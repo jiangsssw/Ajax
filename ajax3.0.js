@@ -12,7 +12,7 @@ function ajaxLast(option) {
     //构建异步对象
     var xhr = new XMLHttpRequest();
     // 设置请求行post或get方法
-    if(option.url=='get'&&data){
+    if(option.url=='get'&&option.data){
         option.url+='?';
         option.url+=option.data;
         option.data=null;
